@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<!--  <script type="text/javascript" src="libraries/jquery-3.4.1.min.js"></script>     --> <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>    
+</head>
+<body>
+  <header id="header-container"> 
+      <img src ="/data/belllabs-logo.png">  
+      <h2>eFlock: emotional Dynamics</h2>
+      <div>How are we feeling about #London?</div>
+  </header>  
+  <div id="info-holder">
+    <div id="time"></div>
+    <div id="total-tweets"></div>  
+    <div id="emotion">Emotion Stats</div>
+  </div>     
+    
+  <div id="search-holder">
+    <div id="question">You want to how the world feels about </div>  
+
+    <form action="">
+      <input type="search">
+      <i class="fa fa-search"></i>
+    </form>      
+  </div>       
+      
+  <canvas width="500" height="500"></canvas>    
+  <canvas width="500" height="500" class="offscreen" style="display: none;"></canvas>  
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+<script src="vec.js"></script>
+<script src="boids.js"></script>
+<script src="ui.js"></script>
